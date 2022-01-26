@@ -3,7 +3,7 @@ import random
 import time
 import requests 
 
-# Create a metric to track time spent and requests made.
+# Metric for processing time
 response = reqs.get('https://httpstat.us') 
 print(response.status_code) 
 
@@ -16,6 +16,7 @@ def sample_request(t):
 
 if __name__ == '__main__':
     
+    # metrics are located at https://locahost:8000
     start_http_server(8000)
     
     while True:
